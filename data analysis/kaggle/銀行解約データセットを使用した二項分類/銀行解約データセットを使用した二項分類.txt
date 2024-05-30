@@ -1,0 +1,86 @@
+「Binary Classification with a Bank Churn Dataset」
+
+概要
+このコンペティションは、銀行の顧客がサービスを解約するかどうかを予測することを目的としています。
+参加者は、提供されたデータセットを用いて顧客の行動を分析し、
+どの顧客が離脱する可能性が高いかを二値分類（バイナリ分類）モデルを使って予測します。
+データセットには顧客の年齢、口座残高、取引履歴などの情報が含まれており、
+これらの特徴をもとに顧客の離脱リスクを評価します。
+
+
+※二値分類
+この場合は顧客が「離脱する（1）」か「離脱しない（0）」か。
+
+
+※二値分類（バイナリ分類）モデル
+ロジスティック回帰：確率的なアプローチで、出力が0から1の範囲になるようにし、その確率を用いて分類します。
+サポートベクターマシン（SVM）：データポイントを分離する最適な境界線（ハイパープレーン）を見つける方法です。
+決定木：特徴量に基づいてデータを分割し、最終的にクラスに分類します。
+ランダムフォレスト：多数の決定木を用いて投票を行い、最終的なクラスを決定します。
+ニューラルネットワーク：複数の層を持つネットワークを通じて特徴を学習し、分類します。
+
+
+
+
+
+
+
+
+特徴量一覧
+train.scv
+CustomerId: 顧客ID
+Surname: 姓
+CreditScore: 信用スコア
+Geography: 地理
+Gender: 性別
+Age: 年齢
+Tenure: 在職期間
+Balance: 残高
+NumOfProducts: 製品数
+HasCrCard: クレジットカードの有無
+IsActiveMember: アクティブなメンバーかどうか
+EstimatedSalary: 推定給与
+Exited: 退会した
+
+
+
+
+説明変数　
+IsActiveMember（アクティブなメンバー）、EstimatedSalary（推定給与）
+
+目的変数
+
+Exited(エグジテッド): 退会した
+
+
+0   id               165034 non-null  int64     数値
+ 1   CustomerId       165034 non-null  int64  　数値　
+ 2   Surname          165034 non-null  object 　カテゴリ変数
+ 3   CreditScore      165034 non-null  int64  　数値　
+ 4   Geography        165034 non-null  object 　カテゴリ変数
+ 5   Gender           165034 non-null  object 　カテゴリ変数
+ 6   Age              165034 non-null  float64　数値
+ 7   Tenure           165034 non-null  int64  　数値
+ 8   Balance          165034 non-null  float64　数値　
+ 9   NumOfProducts    165034 non-null  int64  　数値
+10  HasCrCard        165034 non-null  float64　数値
+ 11  IsActiveMember   165034 non-null  float64　数値
+ 12  EstimatedSalary  165034 non-null  float64　数値
+13  Exited           165034 non-null  int64 　 数値
+
+CustomerId: 顧客ID
+Surname: 姓
+CreditScore: 信用スコア
+Geography: 地理
+Gender: 性別
+Age: 年齢
+Tenure: 在職期間
+Balance: 残高
+NumOfProducts: 製品数
+HasCrCard: クレジットカードの有無
+IsActiveMember: アクティブメンバー
+EstimatedSalary: 推定給与
+Exited: 退会した
+
+
+
