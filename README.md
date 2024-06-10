@@ -18,7 +18,7 @@
 実装ファイル名：モデルチューニングニューラルネットワーク.ipynb
 
 4.アンサンブル
-Ensemble.ipynb (英語)
+実装ファイル名：Ensemble.ipynb
 
 
 
